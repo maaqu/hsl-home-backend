@@ -5,7 +5,12 @@ service: hsl-home-backend
 provider:
   name: aws
   runtime: nodejs6.10
+  region: eu-west-1
+  environment:
+    REGION: ${self:provider.region}
 
 functions:
-  hello:
-    handler: handler.hello
+  getStopData:
+    handler: handler.getStopData
+    environment:
+  

@@ -1,15 +1,3 @@
-'use strict';
+import getStopData from './src/getStopData'
 
-module.exports.hello = (event, context, callback) => {
-  
-  const response = {
-    statusCode: 200,
-    body: JSON.stringify({
-      message: 'Go Serverless v1.0! Your function executed successfully!',
-      input: event,
-    }),
-  }
-
-  callback(null, response);
-
-}
+module.exports.getStopData = (event, context, cb) => getStopData.getStopData(event, context, cb)

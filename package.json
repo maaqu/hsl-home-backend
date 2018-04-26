@@ -4,9 +4,12 @@
   "description": "Backend functions for hsl-home",
   "main": "handler.js",
   "dependencies": {
-    "eslint": "^4.19.1"
+    "axios": "^0.18.0",
+    "eslint": "^4.19.1",
+    "qs": "^6.5.1"
   },
   "devDependencies": {
+    "babel-eslint": "^8.2.3",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.11.0"
   },
